@@ -1,0 +1,13 @@
+## Please apply the following in order to run the project
+- 1 run `composer install`
+- 2 run `npm install`
+- 3 take a copy of .env.example file then rename it to .env and set your DB config
+- 4 run `php artisan migrate --seed`
+- 5 run `php artisan serv` and `npm run dev`
+- 6 create `uploads` dir. in the `/public` dir. (/public/uploads/)
+- 6 you can log in to admin page using appURL/`admin/login`
+- 7 take credentials from `users` table any email with `12345678` as password
+- 8 you can login to subscribers page directly `/`
+- 9 take credentials from `subscribers` table any username with `12345678` as password
+- 10 run `php artisan queue:work`
+- 11 run `php artisan publish:blogs` to dispatch the publishing job
